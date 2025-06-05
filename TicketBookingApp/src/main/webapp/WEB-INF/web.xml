@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" id="WebApp_ID" version="6.0">
+  <display-name>TicketBookingApp</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>Register.jsp</welcome-file>
+    <welcome-file>login.jsp</welcome-file>
+    <welcome-file>ticketBooking.jsp</welcome-file>
+    <welcome-file>upcoming.jsp</welcome-file>
+    <welcome-file>getTicketLogin.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+<servlet-name>Register</servlet-name>
+<servlet-class>com.TicketBookingApp.Servlets.Register</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>Register</servlet-name>
+  <url-pattern>/Register</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Login</servlet-name>
+    <servlet-class>com.TicketBookingApp.Servlet.Login</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/Login</url-pattern>
+</servlet-mapping>
+  <servlet>
+    <servlet-name>BookTicket</servlet-name>
+    <servlet-class>com.TicketBookingApp.Servlet.BookTicket</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>BookTicket</servlet-name>
+    <url-pattern>/BookTicket</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>UpComingMovies</servlet-name>
+    <servlet-class>com.TicketBookingApp.Servlet.UpComingMovies</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>UpComingMovies</servlet-name>
+    <url-pattern>/UpComingMovies</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>CancelBooking</servlet-name>
+    <servlet-class>com.TicketBookingApp.Servlet.CancelBooking</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>CancelBooking</servlet-name>
+    <url-pattern>/CancelBooking</url-pattern>
+</servlet-mapping>
+  <servlet>
+    <servlet-name>getTicket</servlet-name>
+    <servlet-class>com.TicketBookingApp.Servlet.getTicket</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>getTicket</servlet-name>
+    <url-pattern>/getTicket</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>delete</servlet-name>
+    <servlet-class>com.TicketBookingApp.Servlet.delete</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>delete</servlet-name>
+    <url-pattern>/delete</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>getTicketLogin</servlet-name>
+    <servlet-class>com.TicketBookingApp.Servlet.getTicketLogin</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>getTicketLogin</servlet-name>
+    <url-pattern>/getTicketLogin</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>changePassword</servlet-name>
+    <servlet-class>com.TicketBookingApp.Servlet.changePassword</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>changePassword</servlet-name>
+    <url-pattern>/changePassword</url-pattern>
+</servlet-mapping>
+  
+</web-app>
